@@ -24,14 +24,14 @@ jobs:
       - name: Build backend image
         uses: docker/build-push-action@v6
         with:
-          context: ./backend
-          file: ./backend/Dockerfile
+          context: backend
+          file: backend/Dockerfile
           push: true
           tags: kishornc123/mean-backend:latest
 
       - name: Build frontend image
         uses: docker/build-push-action@v6
         with:
-          context: ./frontend
+          context: frontend
           push: true
           tags: kishornc123/mean-frontend:latest

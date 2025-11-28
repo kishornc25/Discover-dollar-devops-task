@@ -1,17 +1,15 @@
 FROM node:18
 
-# Create app directory
 WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the app
+# Copy entire backend folder (including app/)
 COPY . .
 
-# Expose backend port
-EXPOSE 3000
+# server.js is inside /app/app/server.js
+CMD ["node", "app/server.js"]
 
-# Start the server
-CMD ["node", "server.js"]
+EXPOSE 3000

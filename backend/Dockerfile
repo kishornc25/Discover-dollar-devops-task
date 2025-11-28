@@ -6,10 +6,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy entire backend folder (including app/)
+# Copy all backend files
 COPY . .
 
-# server.js is inside /app/app/server.js
+# Start server from inside app folder
 CMD ["node", "app/server.js"]
 
 EXPOSE 3000

@@ -1,27 +1,69 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+# Discover Dollar DevOps Assignment
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+This project contains both **frontend** and **backend** applications, containerized using Docker and managed using Docker Compose.
 
-## Project setup
+---
 
-### Node.js Server
+## 📌 Project Structure
 
-cd backend
+root/
+│── backend/
+│   ├── server.js
+│   ├── package.json
+│   └── Dockerfile
+│
+│── frontend/
+│   ├── index.html
+│   └── Dockerfile
+│
+└── docker-compose.yml
 
-npm install
+---
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+## 🚀 How to Run the Project
 
-Run `node server.js`
+### 1️⃣ Clone the repository
 
-### Angular Client
+git clone <your-repo-url>
 
-cd frontend
+### 2️⃣ Run using Docker Compose
 
-npm install
+docker-compose up --build
 
-Run `ng serve --port 8081`
+---
 
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
+## 🖥️ Services
 
-Navigate to `http://localhost:8081/`
+### 🔹 Backend
+- Node.js Express application  
+- Runs on **port 3000**  
+- Dockerfile used to build the backend image  
+
+### 🔹 Frontend
+- Static HTML frontend  
+- Runs on **port 8080**  
+- Served using Nginx Docker container  
+
+---
+
+## 🧪 Endpoints
+
+### Backend:
+http://localhost:3000/
+
+### Frontend:
+http://localhost:8080/
+
+---
+
+## 🛠️ Technologies Used
+- Docker  
+- Docker Compose  
+- Node.js  
+- Nginx  
+- HTML  
+
+---
+
+## ✨ Submitted by:
+**Kishor NC**

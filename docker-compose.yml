@@ -6,8 +6,6 @@ services:
     container_name: backend_container
     ports:
       - "3000:3000"
-    volumes:
-      - ./backend:/app
     command: ["node", "server.js"]
 
   frontend:
@@ -15,7 +13,5 @@ services:
     container_name: frontend_container
     ports:
       - "8080:80"
-    volumes:
-      - ./frontend:/usr/share/nginx/html
     depends_on:
       - backend

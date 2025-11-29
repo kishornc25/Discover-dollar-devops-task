@@ -5,12 +5,12 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY . .
+COPY .
 RUN npm run build
 
 # Serve stage
 FROM nginx:alpine
-# copy build output — if your build creates dist/<appname>, adjust path accordingly
+
 COPY --from=build /app/dist/angular-15-crud /usr/share/nginx/html
 
 EXPOSE 80

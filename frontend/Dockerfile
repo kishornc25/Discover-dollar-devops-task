@@ -11,7 +11,7 @@ RUN npm run build
 # Serve stage
 FROM nginx:alpine
 # copy build output — if your build creates dist/<appname>, adjust path accordingly
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist/angular-15-crud /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

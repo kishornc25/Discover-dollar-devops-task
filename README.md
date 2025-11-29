@@ -93,13 +93,13 @@ SECTION 7: Nginx Reverse Proxy
 <img width="1907" height="977" alt="nginx" src="https://github.com/user-attachments/assets/459fd5cf-669b-4b5f-8f3b-ba2c1f8e7f58" />
 
 The Angular frontend is served through Nginx and mapped to port 80 on EC2.
+<img width="1917" height="991" alt="EC2 Instance Dashboard" src="https://github.com/user-attachments/assets/93325ff5-788c-4974-81f8-371f6344a332" />
 
 Public application URL:
 
-(http://18.142.136.117:8080)This meets the assignment requirement for port 80 exposure.
+(http://18.142.136.117:8080) This meets the assignment requirement for port 80 exposure.
 
 SECTION 8: Running Application on EC2 Manually
-<img width="1917" height="991" alt="EC2 Instance Dashboard" src="https://github.com/user-attachments/assets/93325ff5-788c-4974-81f8-371f6344a332" />
 
 To update and restart containers:
 

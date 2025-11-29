@@ -38,7 +38,6 @@ EXPOSE 80
 CMD [“nginx”, “-g”, “daemon off;”]
 
 SECTION 3: Docker Hub Images
-<img width="1912" height="1001" alt="DOCKER HUB" src="https://github.com/user-attachments/assets/c289849d-30c3-420f-8773-9437be8dcc2e" />
 
 GitHub Actions builds and pushes Docker images to Docker Hub:
 
@@ -47,6 +46,7 @@ Frontend image: kishornc123/mean-frontend
 
 Docker Hub URL:
 https://hub.docker.com/repositories/kishornc123
+<img width="1912" height="1001" alt="DOCKER HUB" src="https://github.com/user-attachments/assets/c289849d-30c3-420f-8773-9437be8dcc2e" />
 
 SECTION 4: Docker Compose (Used on EC2)
 

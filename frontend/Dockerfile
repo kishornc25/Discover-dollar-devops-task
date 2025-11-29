@@ -12,6 +12,7 @@ RUN npm run build
 # Serve stage
 FROM nginx:alpine
 
+# Copy build output to nginx html folder
 COPY --from=build /app/dist/angular-15-crud /usr/share/nginx/html
 
 EXPOSE 80

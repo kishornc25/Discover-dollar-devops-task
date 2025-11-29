@@ -112,7 +112,7 @@ http://18.142.136.117:3000/api/tutorials
 <img width="1918" height="362" alt="BACKEND ENDPOINT TEST" src="https://github.com/user-attachments/assets/1960169d-5e27-42dd-83e8-edec2335a8fa" />
 
 Frontend UI:
-http://18.142.136.117/:8080
+[http://18.142.136.117:8080
 <img width="1918" height="1021" alt="BROWSER" src="https://github.com/user-attachments/assets/94e20856-e6ed-4233-b5f0-21720f9e05b4" />
 
 SECTION 9: Deliverables Checklist

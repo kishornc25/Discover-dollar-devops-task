@@ -97,7 +97,8 @@ The Angular frontend is served through Nginx and mapped to port 80 on EC2.
 
 Public application URL:
 
-(http://18.142.136.117) This meets the assignment requirement for port 80 exposure.
+(http://18.142.136.117/)
+This meets the assignment requirement for port 80 exposure.
 
 SECTION 8: Running Application on EC2 Manually
 
